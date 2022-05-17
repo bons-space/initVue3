@@ -1,0 +1,58 @@
+
+body {
+  position: relative;
+  font-size: 14px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+a, address, b, big, blockquote, body,
+center, cite, code, dd, del, div, dl, dt, em,
+fieldset, font, form, h1, h2, h3, h4, h5, h6,
+html, i, iframe, img, ins, label, legend, li,
+ol, p, pre, small, span, strong, u, ul, var {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+em,i{
+  font-style: inherit;
+}
+
+button, input {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all .2s;
+}
+
+/*控制整个滚动条*/
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  background-clip: padding-box;
+}
+
+/*滚动条中间滑动部分*/
+::-webkit-scrollbar-thumb {
+  background-color: #D3DBE6;
+  border-radius: 5px;
+}
+/*滚动条右下角区域*/
+::-webkit-scrollbar-corner {
+  background-color: #ECF0F7;
+}
