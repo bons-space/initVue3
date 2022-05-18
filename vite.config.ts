@@ -16,7 +16,7 @@ export default defineConfig(({ mode }: UserConfig): UserConfig => {
     base: DAP_ENV.VITE_PUBLIC_PATH,
     server: {
       host: 'localhost',
-      port: 8091,
+      port: 8081,
       proxy: {
         [DAP_ENV.VITE_BASE_API]: {
           target: `${DAP_ENV.VITE_TARGET_HOST}`,

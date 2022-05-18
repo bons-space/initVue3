@@ -8,11 +8,11 @@ import {
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'login',
+    name: 'index',
     meta: {
-      name: '登录',
+      name: 'index',
     },
-    component: () => import('@/view/Login.vue'),
+    component: () => import('@/view/Index.vue'),
     children: [],
   },
   {
