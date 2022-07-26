@@ -1,5 +1,8 @@
 import { defineConfig, UserConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { visualizer } from 'rollup-plugin-visualizer'; // 打包分析
 
 // @ts-ignore
@@ -32,6 +35,14 @@ export default defineConfig(({ mode }: UserConfig): UserConfig => {
     },
     plugins: [
       vue(),
+      AutoImport({
+        resolvers: [ElementPlusResolver()],
+      }),
+      Components({
+        directoryAsNamespace: true,
+        dirs: ['src/components'],
+        resolvers: [ElementPlusResolver()],
+      }),
       visualizer(),
     ],
     css: {

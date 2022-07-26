@@ -16,6 +16,14 @@ const routes: RouteRecordRaw[] = [
     children: [],
   },
   {
+    path: '/video',
+    name: 'video',
+    meta: {
+      name: 'video',
+    },
+    component: () => import('@/view/video/VideoIndex.vue'),
+  },
+  {
     path: '/*',
     name: '404',
     redirect: '/login',
